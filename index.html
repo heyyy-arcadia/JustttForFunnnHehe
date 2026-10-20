@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090807">
+  <title>SHE-NANIGANS !!!</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main>
+    <section id="welcome-screen" class="welcome-screen">
+      <div class="welcome-content">
+        <p class="eyebrow">DAWN OF A NEW HOBBY ... HeeHeeHee 😁</p>
+        <div class="moon" aria-hidden="true">🕊️</div>
+        <h1>Some things yk<br><span>just can't be revealed ...</span></h1>
+        <p class="welcome-copy">
+          A collection of some random facts about me, here for you ... CREEPS
+        </p>
+        <button id="enter-button" class="primary-button">
+          Enter &amp; Sate your impatience <span aria-hidden="true">↗</span>
+        </button>
+        <p class="tiny-note">TAKE YOUR TIME · NO RUSH IDIOT</p>
+      </div> 
+      <div class="welcome-bottom">FROM DIVINE TRUTH ... FOR YOU CREEPS</div>
+    </section>
+    <section id="home-screen" class="home-screen hidden">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Home">
+          <span class="brand-mark">(¬_¬)</span> Who's Achlys ???
+        </a>
+        <button id="music-button" class="music-button" type="button">
+          ♫ Music on
+        </button>
+      </header>
+      <section class="hero">
+        <p class="eyebrow">HI THERE WIERDO !</p>
+        <h2>A little closer<br>to <span>knowing me....(gtfo creep)</span></h2>
+        <h2>✉</h2>
+        <p class="hero-copy">
+          Every card holds something precious... Some are silly, some are serious
+          and some took a little (tbh alot of) courage to share.
+        </p>
+        <div class="hero-line"><span></span> OPEN ANY CHAPTER BELOW <span></span></div>
+      </section>
+      <section class="collection">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE DIVINE "CATHEDRAL" OF LIFE ... HEHE 😁😅</p>
+            <h3>Some possesive facts about me ... Stay wary ...</h3>
+            <h3> ⚜                                              </h3>
+          </div>
+          <span id="card-count" class="count">15 CHAPTERS</span>
+        </div>
+        <div id="cards-container" class="cards-grid"></div>
+      </section>
+      <footer>
+        <p>Am I stupid ? Yea ... obviously ...</p>
+        <a href="admin/index.html">Dare not click here ↗</a>
+      </footer>
+    </section>
+  </main>
+  <div id="reveal-overlay" class="overlay hidden" role="dialog"
+       aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button id="close-button" class="close-button"
+              aria-label="Close dialog">&times;</button>
+      <p class="eyebrow">A LITTLE SOMETHING ...</p>
+      <h2 id="modal-title">One small secret ...</h2>
+      <p id="modal-description"></p>
+      <form id="password-form">
+        <label for="password-input">But do you know the password ???</label>
+        <input id="password-input" type="password"
+               placeholder="A word only you know" autocomplete="off" required>
+        <p id="password-error" class="error-message" aria-live="polite"></p>
+        <button class="primary-button modal-submit" type="submit">Reveal thy secret within !!!</button>
+      </form>
+      <div id="secret-reveal" class="secret-reveal hidden"></div>
+    </div>
+  </div>
+  <audio id="background-music" loop preload="none"></audio>
+  <script src="js/secrets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

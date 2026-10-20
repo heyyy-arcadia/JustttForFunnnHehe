@@ -1,0 +1,11 @@
+{
+  "siteName": "She-nanigans",
+  "theme": {
+    "background": "#071b19",
+    "accent": "#a6cbb2"
+  },
+  "music": {
+    "path": "assets/audio/background-music.mp3",
+    "volume": 0.35
+  }
+}
